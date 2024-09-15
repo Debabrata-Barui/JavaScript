@@ -1,0 +1,38 @@
+<script>
+//var -- It is used for global variable, It does't stay within any scope. It is available for entire function or program.We can declare mutiple time to same name variable by var with the same scope;
+
+var a = 10;
+var a = 15;
+{
+  var a=20;
+  console.log(a); // This is 20
+}
+
+console.log(a); // This is 20
+
+
+
+
+
+// let -- It is used for local variable. It is more secure than var. It is scope dependent.We can't declared same name variable within the scope.
+let b = 30;
+{
+    let b = 40; 
+    console.log(b); // This is the 40
+}
+
+console.log(b); // This is 30;
+
+
+
+// const -- It is used for local variable. It is more secure than var. It is scope dependent.We can't declared same name variable within the scope.
+const c = 50;
+{
+    const b = 60; 
+    console.log(b); // This is the 40
+}
+
+console.log(b); // This is 30;
+
+
+</script>

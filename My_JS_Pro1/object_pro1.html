@@ -1,0 +1,53 @@
+<html>
+   
+        <button type="button" onclick="fun1()">CLICK HERE</button>
+        <p id="tas101"></p>
+    
+    <script>
+
+        // Make the fun1 fuction 
+        function fun1() {
+            // Make obj1 json object
+            let obj1 = {
+                    // Make "key" : "value" pair
+                    "name" : "Debabrata" ,  // --- String datatype 
+
+                    // Make key : "value" pair
+                    age : 25,  // --- Number datatype
+                    phone : 8637550219,  // 64 bit size of the number datatype
+                    // 
+                    address : ["Simra", "Nanduka", "Purulia" , "723145"], // -- address is a json object
+                    addition : function(a,b){    // here addition is a function
+                        return (a + b); 
+                    },
+                    parents : {
+                        "father" : "GC Barui", 
+                        "mother" : "Shadna Barui"
+                    }, // parents is a json object
+
+                    parents2 : `{"father" : "GC Barui", "mother" : "Shadna Barui"}` // parents2 is a string
+                    
+            };
+
+            alert(`Name :- ${obj1.name} , Age :- ${obj1.age}, Phone No :- ${obj1.phone}  Address :- ${obj1.address}, Parents -> ${obj1.parents.father}`);
+            alert(obj1.parents2);
+            window.alert(`Addition ==> ${obj1.addition(100, 200)}`);
+
+            document.getElementById("tas101").innerHTML = 5 ** 2;
+            // JSON to String type custing 
+            document.write(JSON.stringify(obj1.parents));
+            // String to JSON tyoe custing
+            const parents2_obj = JSON.parse(obj1.parents2);
+            // print the converted json data 
+            document.write(parents2_obj.mother);
+            console.log(parents2_obj.father);
+            console.log(`Phone Number type  :- ${typeof(obj1.phone)}`);
+
+            
+
+
+
+
+        }
+    </script>
+</html>

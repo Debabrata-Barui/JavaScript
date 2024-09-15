@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "column1": "Data1",
+    "column2": 1,
+    "column3": "2023-01-01T00:00:00.000Z",
+    "column4": 1,
+    "column5": "Sample text 1"
+  },
+  {
+    "id": 2,
+    "column1": "Data2",
+    "column2": 2,
+    "column3": "2023-02-01T00:00:00.000Z",
+    "column4": 0,
+    "column5": "Sample text 2"
+  },
+  {
+    "id": 3,
+    "column1": "Data3",
+    "column2": 3,
+    "column3": "2023-03-01T00:00:00.000Z",
+    "column4": 1,
+    "column5": "Sample text 3"
+  },
+  {
+    "id": 4,
+    "column1": "Data4",
+    "column2": 4,
+    "column3": "2023-04-01T00:00:00.000Z",
+    "column4": 0,
+    "column5": "Sample text 4"
+  },
+  {
+    "id": 5,
+    "column1": "Data5",
+    "column2": 5,
+    "column3": "2023-05-01T00:00:00.000Z",
+    "column4": 1,
+    "column5": "Sample text 5"
+  },
+  {
+    "id": 6,
+    "column1": "Data6",
+    "column2": 6,
+    "column3": "2023-06-01T00:00:00.000Z",
+    "column4": 0,
+    "column5": "Sample text 6"
+  },
+  {
+    "id": 7,
+    "column1": "Data7",
+    "column2": 7,
+    "column3": "2023-07-01T00:00:00.000Z",
+    "column4": 1,
+    "column5": "Sample text 7"
+  },
+  {
+    "id": 8,
+    "column1": "Data8",
+    "column2": 8,
+    "column3": "2023-08-01T00:00:00.000Z",
+    "column4": 0,
+    "column5": "Sample text 8"
+  },
+  {
+    "id": 9,
+    "column1": "Data9",
+    "column2": 9,
+    "column3": "2023-09-01T00:00:00.000Z",
+    "column4": 1,
+    "column5": "Sample text 9"
+  },
+  {
+    "id": 10,
+    "column1": "Data10",
+    "column2": 10,
+    "column3": "2023-10-01T00:00:00.000Z",
+    "column4": 0,
+    "column5": "Sample text 10"
+  },
+  {
+    "id": 11,
+    "column1": "Data11",
+    "column2": 11,
+    "column3": "2023-11-01T00:00:00.000Z",
+    "column4": 1,
+    "column5": "Sample text 11"
+  },
+  {
+    "id": 12,
+    "column1": "Data12",
+    "column2": 12,
+    "column3": "2023-12-01T00:00:00.000Z",
+    "column4": 0,
+    "column5": "Sample text 12"
+  },
+  {
+    "id": 13,
+    "column1": "Data13",
+    "column2": 13,
+    "column3": "2024-01-01T00:00:00.000Z",
+    "column4": 1,
+    "column5": "Sample text 13"
+  },
+  {
+    "id": 14,
+    "column1": "Data14",
+    "column2": 14,
+    "column3": "2024-02-01T00:00:00.000Z",
+    "column4": 0,
+    "column5": "Sample text 14"
+  },
+  {
+    "id": 15,
+    "column1": "Data15",
+    "column2": 15,
+    "column3": "2024-03-01T00:00:00.000Z",
+    "column4": 1,
+    "column5": "Sample text 15"
+  },
+  {
+    "id": 16,
+    "column1": "Data16",
+    "column2": 16,
+    "column3": "2024-04-01T00:00:00.000Z",
+    "column4": 0,
+    "column5": "Sample text 16"
+  },
+  {
+    "id": 17,
+    "column1": "Data17",
+    "column2": 17,
+    "column3": "2024-05-01T00:00:00.000Z",
+    "column4": 1,
+    "column5": "Sample text 17"
+  },
+  {
+    "id": 18,
+    "column1": "Data18",
+    "column2": 18,
+    "column3": "2024-06-01T00:00:00.000Z",
+    "column4": 0,
+    "column5": "Sample text 18"
+  },
+  {
+    "id": 19,
+    "column1": "Data19",
+    "column2": 19,
+    "column3": "2024-07-01T00:00:00.000Z",
+    "column4": 1,
+    "column5": "Sample text 19"
+  },
+  {
+    "id": 20,
+    "column1": "Data20",
+    "column2": 20,
+    "column3": "2024-08-01T00:00:00.000Z",
+    "column4": 0,
+    "column5": "Sample text 20"
+  }
+]

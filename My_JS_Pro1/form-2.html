@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form method="post" id="myForm">
+        <label for="fname">First Name : </label>
+        <input type="text" id="fname" name="fname" required><br>
+
+        <label for="mname">Middle Name : </label>
+        <input type="text" id="mname" name="mname"><br>
+
+        <label for="lname">Last Name : </label>
+        <input type="text" id="lname" name="lname" required> <br>
+
+        <label for="email">Email ID : </label>
+        <input type="email" id="email" name="email" required> <br>
+
+        <label for="phone">Phone Number : </label>
+        <input type="number" id ="phone" name="phone" required size=10> <br>
+
+        <label> Sex : </label>
+        <label for="male"> Male : </label>
+        <input type="radio" id="male" name="sex" required> 
+
+        <label for="female"> Female : </label>
+        <input type="radio" id="female" name="sex" required>
+
+        <label for="others"> Others : </label>
+        <input type="radio" id="others" name="sex" required> <br>
+        
+        <label> Subjects : </label>
+        <label for = "bengali"> Bengali : </label>
+        <input type="checkbox" id="bengali" name="bengali">
+        <label for = "english"> English : </label>
+        <input type="checkbox" id="english" name="english">
+        <label for = "computer"> Computer Science : </label>
+        <input type="checkbox" id="computer" name="computer"><br>
+
+        <label for ="city">City : </label>
+        <select name="city" id="city">
+        </select>
+        
+
+        <br><br>
+        <input type="Submit" id="submit" onclick="fun(event)">
+        <button type="button" onclick="document.getElementById('myForm').reset();">Clean</button>
+
+        <p id="rjson"></p>
+        <script>
+            let cities = ["Bangalore", "Kolkata", "Pune", "Hyderabad", "Delhi", "Mumbai", "Chennai"];
+            let options = '';
+            let text = '';
+    
+            for(let city of cities){
+                options += `<option value="${city}">${city}</option>`;
+                text += city + ' ';
+            }
+    
+            document.getElementById("city").innerHTML = options;
+        </script>
+    
+    
+       
+    </form>
+    <script>
+        function fun(event){
+                event.preventDefault();  // Prevent the form from submitting and reloading the page
+                let fname = document.getElementById("fname").value;             
+                let mname = document.getElementById("mname").value;
+                let lname = document.getElementById("lname").value;
+                let email = document.getElementById("email").value;
+                let phone = document.getElementById("phone").value;
+    
+                let rsex, rbengali, renglish, rcomputer;
+                if (document.getElementById("male").checked == true){
+                    rsex = "Male";
+                    
+                }
+                else if(document.getElementById("female").checked == true){
+                    rsex = "Female";
+                    //alert("Female");
+                }
+                else if(document.getElementById("others").checked == true){
+                    rsex = "Others";
+                  
+                }
+                else{
+                    alert("Kindly fill the Sex Element");
+                }
+
+                
+                if (document.getElementById("bengali").checked == true){
+                    rbengali = "Bengali";
+                    
+                }
+
+                
+                if (document.getElementById("english").checked == true){
+                    renglish = "English";
+                    
+                }
+
+                if (document.getElementById("computer").checked == true){
+                    rcomputer = "Computer";
+                    
+                }
+
+                let json = {fname : `${fname}`, mname : `${mname}`, lname : `${lname}`, email : `${email}`, phone : `${phone}`, sex : `${rsex}`, bengali : `${rbengali}`, english : `${renglish}`, computer : `${rcomputer}` };
+                alert(json.email);
+                let text ='';
+                for(let key in json){   
+                    text += key + ":" + json[key] + " "; 
+
+                }
+                // document.write(text); 
+                document.getElementById("rjson").innerHTML=text;   
+                console.log('text',text);
+                //alert(text);
+        }
+                   
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<script>
+    const person = {
+        firstname : "Debabrata", 
+        lastname  : "Barui",
+        age : 25, 
+        dob_year : 2000,
+        display : function(){
+            document.write(this.firstname+ " "+ this.lastname+ " "+this.age+ " "+this.dob_year);
+
+        }
+
+    }
+
+    const person2= {
+        firstname: "Viswma",
+        lastname: "Rajput",
+        age : 25, 
+        dob_year : 2000
+
+    }
+    person.display.call(person2); // person is takeing the data from person2 
+    
+    
+</script>

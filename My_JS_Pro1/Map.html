@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun(){
+            const map1 = new Map([
+                ["Apple", 500], 
+                ["Onion", 100],
+                ["Banana", 7849],
+                ["Bitter Gourd", 600], 
+
+            ]);
+            let fruit = map1.get("Bitter Gourd");
+            document.write(fruit);
+
+            const map2 = new Map();
+            map2.set("Kamala", 1000);
+            map2.set("Aam", 700);
+            document.write("\n"+ map2.get("Aam"));
+        }
+        fun();
+
+    </script>
+</body>
+</html>

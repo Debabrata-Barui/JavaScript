@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Iterables</h1>
+<h2>Iterate over a Set</h2>
+
+<p id="demo1"></p>
+<p>--------------------------</p>
+<p id="demo2"></p>
+
+<script>
+// Create a Set
+const arr1 = new Set("A quick brown fox jumps over the lazy dog");
+const arr2 = new Set(["abc", "bcd", "cde", "def"]);
+
+// List all Elements
+let text1 = "";
+for (const x of arr1) {
+  text1 += x + "<br>";
+}
+
+let text2 = "";
+for (const x of arr2) {
+  text2 += x + "<br>";
+}
+
+document.getElementById("demo1").innerHTML = text1;
+document.getElementById("demo2").innerHTML = text2;
+</script>
+</body>
+</html>

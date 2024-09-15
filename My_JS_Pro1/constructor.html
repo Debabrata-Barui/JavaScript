@@ -1,0 +1,28 @@
+<html>
+    <button type="button" onclick="fun1()">CLICK ON</button>
+    <p id="tas101"> </p>
+    <!-- This is called this function -->
+    <button type="button" onmouseover="this.innerHTML=Date()">Date</button> 
+
+    <script>
+        function fun1(){
+            function person(name, age, phone, dob){
+                this.tname = name;
+                this.tage = age;
+                this.tphone = phone;
+                this.tdob = dob;
+                this.output = function(){
+                    document.getElementById("tas101").innerHTML = `Name -> ${this.name}, Age -> ${this.age}, Phone -> ${this.phone}, DOB -> ${dob}`;
+
+                }
+
+
+            }
+
+            const obj1 = new person("Debabrata", 25 , 8637550219, "07-03-2000");
+            obj1.output();
+            document.write(`\n Debaabrata \n Barui`);
+
+        }
+    </script>
+</html>

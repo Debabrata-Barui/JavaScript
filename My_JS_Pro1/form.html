@@ -1,0 +1,106 @@
+<html>
+    <form method="post">
+        <label for="fname">First Name : </label>
+        <input type="text" id="fname" name="fname" required><br>
+
+        <label for="mname">Middle Name : </label>
+        <input type="text" id="mname" name="mname"><br>
+
+        <label for="lname">Last Name : </label>
+        <input type="text" id="lname" name="lname" required> <br>
+
+        <label for="email">Email ID : </label>
+        <input type="email" id="email" name="email" required> <br>
+
+        <label for="phone">Phone Number : </label>
+        <input type="number" id ="phone" name="phone" required size=10> <br>
+
+        <label> Sex : </label>
+        <label for="male"> Male : </label>
+        <input type="radio" id="male" name="sex" required> 
+
+        <label for="female"> Female : </label>
+        <input type="radio" id="female" name="sex" required>
+
+        <label for="others"> Others : </label>
+        <input type="radio" id="others" name="sex" required> <br>
+        
+        <label> Subjects : </label>
+        <label for = "bengali"> Bengali : </label>
+        <input type="checkbox" id="bengali" name="bengali">
+        <label for = "english"> English : </label>
+        <input type="checkbox" id="english" name="english">
+        <label for = "computer"> Computer Science : </label>
+        <input type="checkbox" id="computer" name="computer">
+        
+
+        <br><br>
+        <input type="Submit" id="submit" onclick="fun()">
+        <button type="button">Clean</button>
+
+        <p id ="rfname"></p>
+        <p id ="rmname"></p>
+        <p id ="rlname"></p>
+        <p id ="remail"></p>
+        <p id ="rphone"></p>
+        <p id ="rsex"></p>
+        <p id ="rbengali"></p>
+        <p id ="renglish"></p>
+        <p id="computer"></p>
+
+    </form>
+
+<script>
+        function fun(){
+                
+                let fname = document.getElementById("fname").value;
+                document.getElementById("rfname").innerHTML=fname;
+
+                let mname = document.getElementById("mname").value;
+                document.getElementById("rmname").innerHTML=mname;
+
+                let lname = document.getElementById("lname").value;
+                document.getElementById("rlname").innerHTML=lname;
+
+                let email = document.getElementById("email").value;
+                document.getElementById("remail").innerHTML=email;
+
+                let phone = document.getElementById("phone").value;
+                document.getElementById("rphone").innerHTML=phone;
+                
+                if (document.getElementById("male").checked == true){
+                    document.getElementById("rsex").innerHTML = "Male";
+                    //alert("Male");
+                }
+                else if(document.getElementById("female").checked == true){
+                    document.getElementById("rsex").innerHTML = "Feale";
+                    //alert("Female");
+                }
+                else if(document.getElementById("others").checked == true){
+                    document.getElementById("rsex").innerHTML = "Others";
+                    // alert("Others");
+                }
+                else{
+                    alert("Kindly fill the Sex Element");
+                }
+
+
+                if (document.getElementById("bengali").checked == true){
+                    document.getElementById("rbengali").innerHTML = "Bengali";
+                    //alert("Male");
+                }
+
+                
+                if (document.getElementById("english").checked == true){
+                    document.getElementById("renglish").innerHTML = "English";
+                    //alert("Male");
+                }
+
+                if (document.getElementById("computer").checked == true){
+                    document.getElementById("rcomputer").innerHTML = "Computer";
+                    //alert("Male");
+                }
+
+        }
+</script>
+</html>

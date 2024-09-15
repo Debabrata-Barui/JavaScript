@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         // JSON Object string with loop
+        function fun1(){
+           
+            let json={name : "Debabrata", company : "tas", phone : "8637550219", designation : "DevOps Engineer"};
+            //alert(json.name);
+            text= " ";
+            for (let i in json){
+                text += " " + json[i];  // here i seems to be key of the json object
+                document.write(json[i]+ " " );  
+                //document.write("<br>" + i + " : " + text + " ");
+            }
+            document.write("<br> "+ text + " ");  //  It is a single atring
+        }
+        fun1();
+
+    </script>
+</body>
+</html>

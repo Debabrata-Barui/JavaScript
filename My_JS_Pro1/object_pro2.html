@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>Accessing Nested Objects</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create nested Objects
+const myObj = {
+  name: "John",
+  age: 30,
+  myCars: {
+    car1: "Ford",
+    car2: "BMW",
+    car3: "Fiat"
+  }
+}
+
+let p1 = "myCars";
+let p2 = "car2";
+
+// Access of objects 
+alert("myObj.myCars.car2 => "+myObj.myCars.car2);
+alert("myObj.myCars[p2] => "+ myObj.myCars[p2]);
+alert("myObj[p1][p2] => "+ myObj[p1][p2]);
+
+</script>
+
+</body>
+</html>

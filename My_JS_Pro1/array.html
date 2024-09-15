@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun(){
+            let arr1 = ["Debabrata", "Naresh", "Shankar", "Atul", "Pravath", "Abinash", "Aman", "Kakali"];
+            alert(arr1);
+            alert(arr1.join("-"));  // Join - between the each index value
+            arr1.pop();   // remove from last
+            alert(arr1);
+            arr1.push("Archi"); // Add the value at the end of the array 
+            alert(arr1);
+            delete arr1[6]; // Delete by index number
+            alert(arr1);
+            arr1.splice(6, 1, "Aniket"); // arr1.splice(IpndexNumber, NumberOfElement, "ValueOfThe");
+            alert(arr1);
+            console.log("The length of array is : "+arr1.length); // To get the size/length of array
+            console.log("The index of Debabrata is : " + arr1.indexOf("Debabrata"));
+
+            const arr3 = [
+                ["Debabrata", "Shankar"],
+                [25, 46],
+                {name : "Parama", age : 26}
+            ];
+
+            //console.log(arr3);
+           // document.write(arr3 + arr3[2].name);
+            for(let i=0; i<arr3.length; i++){
+                
+                alert(arr3[i]);
+                if(arr3[i] == arr3[2]){
+                    for(j in arr3[i]){
+                        document.write(j + ":" + arr3[i][j] + " ,"); //name : Parama, age : 26
+                
+                    }
+                    break;
+                }
+                document.write(arr3[i] + "<br>");
+            }
+        }
+        fun();
+    </script>
+</body>   
+</html>

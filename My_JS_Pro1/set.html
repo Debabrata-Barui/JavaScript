@@ -1,0 +1,31 @@
+<script>
+   let str1 = new Set("A quick brown fox jumps over the lazy dog");
+   for(let i of str1){
+        document.write(i + "<br>");
+   }
+document.write("-------------------------------------------------");
+   let arr2 = new Set(["Debabrata", "Baban", "Subrata"]);
+   for (let i of arr2){
+        document.write(i + "<br>");
+   }
+
+// We can't direcly use json object in Set()
+let obj1 = {name: "Debabrata", age: 25, phone: 8637550219};
+let set1 = new Set(Object.values(obj1));  // The values will be  converted into array
+console.log(set1);
+
+let set2 = new Set(Object.entries(obj1)); // It will convert the each Key: Value pair into array 
+console.log(set2);
+
+
+let set3 = new Set([
+    ["Debabrata", "25", "Simra"],
+    ["Shankar", "46"],
+    ["Aniket", "35"]
+]);
+for (let i of set3){
+        document.write(i + "<br>");
+}
+
+
+</script>

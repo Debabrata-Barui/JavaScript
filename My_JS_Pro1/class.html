@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class car{
+            constructor(name, year){
+                this.name = name;
+                this.year = year;
+            }
+            age(a,b){
+                document.write(this.name + " "+ this.year + " ");
+                // property1 = this.name;
+                // property2 = this.year;
+                // document.write(property1 + property2);
+                return a+b;
+            }
+            
+        }
+        const obj1 = new car("Debabrata", 2000);
+        document.write(obj1.age(100,200));
+        
+    </script>
+</body>
+</html>

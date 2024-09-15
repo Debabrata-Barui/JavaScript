@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Dropdown</title>
+</head>
+<body>
+    <select name="city" id="city"></select>
+
+    <script>
+        let cities = ["Bangalore", "Kolkata", "Pune", "Hyderabad", "Delhi", "Mumbai", "Chennai"];
+        let options = '';
+        let text = '';
+
+        for(let city of cities){
+            options += `<option value="${city}">${city}</option>`;
+            text += city + ' ';
+        }
+
+        document.getElementById("city").innerHTML = options;
+        alert(text.trim());
+    </script>
+</body>
+</html>

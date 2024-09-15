@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun(){
+            const arr1=["Debabrata", "25", "tas", "8637550219"];
+            text="";
+            for(let i of arr1){
+                text += " " + i;
+                document.write(i + "<br>");
+                if (i=="25"){
+                    break;
+                    //continue;
+                }
+            
+            }
+            alert(text);
+        }
+        fun();
+    </script>
+</body>
+</html>

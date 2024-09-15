@@ -1,0 +1,25 @@
+<button id="toggleButton">OFF</button>
+<div id ="on"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+    const button = document.getElementById('toggleButton');
+    
+    button.addEventListener('click', () => {
+        if (button.textContent === 'OFF') {
+            button.textContent = 'ON';
+            // Add any other actions you want to trigger when the button is ON
+            console.log('Button is now ON');
+            document.getElementById("on").innerHTML='<img src="bulb-on.png">';
+
+        } else {
+            button.textContent = 'OFF';
+            // Add any other actions you want to trigger when the button is OFF
+            console.log('Button is now OFF');
+            document.getElementById("on").innerHTML='<img src="bulb-off.png">';
+        }
+    });
+});
+
+
+
+</script>
